@@ -4,11 +4,13 @@
   "description": "秘密の匿名掲示板",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "node test.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "http-auth": "4.1.9",
     "pug": "^2.0.0-rc.4"
   }
 }

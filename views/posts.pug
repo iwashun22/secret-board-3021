@@ -5,7 +5,11 @@ html(lang="jp")
     title 秘密の匿名掲示板
   body
     h1 秘密の匿名掲示板
+    a(href="/logout") ログアウト
     h2 新規投稿
+    each content in contents
+      p #{content}
+      hr
     form(method="post" action="/posts")
       div
         textarea(name="content" cols=40 rows=4)
